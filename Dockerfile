@@ -22,6 +22,7 @@ RUN apk --no-cache add git curl python bash libc6-compat && \
     apk update && \
     apk add ca-certificates wget && \
     update-ca-certificates && \
+    apk add openssl && \
     curl -L -o crcmod.tar.gz "https://downloads.sourceforge.net/project/crcmod/crcmod/crcmod-1.7/crcmod-1.7.tar.gz" && \
     tar -xzf crcmod.tar.gz && \
     cd crcmod-1.7/ && \
